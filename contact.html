@@ -5,34 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Contact Curtis</title>
+    <title>Contact | Curtis</title>
 </head>
 <body>
     <header>
-        <h1>Curtis Kilgore</h1>
-        <ul>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-        </ul>
+        <div class="container">
+            <a href="/index.html" id="logo">Curtis Kilgore</a>
+            <nav>
+                <li><a href="/index.html" class="floatR">About</a></li>
+                <li><a href="/portfolio.html" class="floatR">Portfolio</a></li>
+                <li><a href="/contact.html" class="floatR">Contact</a></li>
+            </nav>
+        </div>
     </header>
 
-    <section id="main">
-        <h2>Contact</h2>
-        <hr>
-        
-        <form>
-            <label for="fName">First name:</label><br>
-            <input type="text" id="fName" placeholder="Curtis"><br><br>
+    <div class="wrapper" >
 
-            <label for="lName">Last name:</label><br>
-            <input type="text" id="lName" name="lName" placeholder="Kilgore"><br><br>
-
-            <label id="message">Message</label><br>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="You are such a good programmer Curtis Kilgore. I would love to hire you."></textarea><br>
-
-            <input type="button" value="Submit">
-        </form>
-    </section>
+        <section id="main" class="contact-main">
+            <h1>Contact</h1>
+            
+            <form>
+                <label for="fName">First name:</label><br>
+                <input type="text" id="fName" placeholder="Curtis" required><br><br>
+    
+                <label for="lName">Last name:</label><br>
+                <input type="text" id="lName" name="lName" placeholder="Kilgore" required><br><br>
+    
+                <label id="message">Message</label><br>
+                <textarea name="message" id="message" rows="7" placeholder="You are such a good programmer Curtis Kilgore. I would love to hire you."></textarea required><br>
+    
+                <input type="button" value="Submit" id="button">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <span>&#169;</span> Copyright CK 2021
+    </footer>
 </body>
 </html>
