@@ -192,6 +192,7 @@ footer {
   height: 200px;
   margin: 10px;
 } */
+
 .my-image {
   float: left;
   width: 200px;
@@ -204,25 +205,38 @@ footer {
   clear: both;
 }
 
+/* Portfolio Page */
+
 .image-container {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  /* padding: 5px; */
+  margin: 20px 0 25px;
   position: relative;
 }
 
 .image-container img {
   width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+  height: 220px;
 }
 
-h3 {
+.image-container:nth-child(even) {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.image-container h3 {
   background-color: #4aaaa5;
   color: #ffffff;
   position: absolute;
-  min-width: 96.5%;
-  left: 15px;
+  width: 100%;
+  line-height: 30px;
+  /* min-width: 96.5%; */
+  /* left: 15px; */
   padding: 15px;
-  bottom: 25px;
+  bottom: 20px;
   text-align: center;
 }
 
